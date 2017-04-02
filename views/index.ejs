@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Ionic</title>
+  </head>
+  <body ng-controller="RegisterController">
+    <div>
+      <input type="text" ng-model="user.username"/>
+      <input type="text" ng-model="user.email"/>
+      <input type="password" ng-model="user.password"/>
+      <button ng-click="register()">click</button>
+    </div>
+
+    <br />
+    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+    </fb:login-button>
+    <div id="status">
+    </div>
+    <div class="fb-page" data-href="https://www.facebook.com" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com">Facebook</a></blockquote></div>
+
+    <script src="js/angular.js"></script>
+    <script src="app/app.module.js"></script>
+  </body>
+</html>
